@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979b059650b71eb4d8354117f274fcb4, type: 3}
   m_Name: Barbarian
   m_EditorClassIdentifier: 
-  charName: 
-  description: 
-  artwork: {fileID: 0}
-  health: 0
+  charName: Barbarian
+  description: Reckless but powerful attacker
+  artwork: {fileID: 858603726, guid: 8d310d7d0cc2f5a4aa3a5bee34410a0b, type: 3}
+  health: 10
   attackDieNum: 0
   attackDieType: 0
   defenseDieNum: 0

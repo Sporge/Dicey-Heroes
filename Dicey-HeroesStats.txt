@@ -1,0 +1,32 @@
+Character stats:
+
+Barbarian:
+HP-16
+Attack-1d12
+Defence-1d8
+Special: None
+Knight:
+HP-12
+Attack-2d4
+Defence-1d10
+Special: None
+Rogue:
+HP-8
+Attack-2d4
+Defence-2d4
+Special: On a max roll of a die roll again and add
+Wizard:
+HP-6
+Attack-1d4
+Defence-1d4
+Special: Attacks from anywhere, bypasses armor targets front
+Archer:
+HP-8
+Attack-1d6
+Defence-1d8
+Special: Uses a d8 attack from anywhere but front, targets back
+Healer:
+HP-10
+Attack-1d6
+Defence-1d8
+Special: Heals unit in front of it by 1d6
