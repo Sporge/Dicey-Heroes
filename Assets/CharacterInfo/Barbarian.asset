@@ -13,10 +13,17 @@ MonoBehaviour:
   m_Name: Barbarian
   m_EditorClassIdentifier: 
   charName: Barbarian
-  description: Reckless but powerful attacker
+  description: Reckless but powerful attacker. Also here is more just to see how
+    this looks.
   artwork: {fileID: 858603726, guid: 8d310d7d0cc2f5a4aa3a5bee34410a0b, type: 3}
-  health: 10
-  attackDieNum: 0
-  attackDieType: 0
-  defenseDieNum: 0
-  defenseDieType: 0
+  health: 16
+  attackDice:
+  - dieType: 12
+    dieNum: 1
+  defenseDice:
+  - dieType: 8
+    dieNum: 1
+  survivabilityDice:
+  - dieType: 8
+    dieNum: 1
+  magicDice: []

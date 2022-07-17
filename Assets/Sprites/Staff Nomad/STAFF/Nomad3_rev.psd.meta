@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +69,42 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -78,7 +114,1204 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Nomad3_rev_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 320
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b395f1db1068f5b4ebda25f79b59f575
+      internalID: -1576997055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 320
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31240b57590575a469036165cb56d774
+      internalID: 250324800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 320
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450b3d8af2fcfbc40a156a090509024c
+      internalID: 1915850195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 320
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fe7d477096fec478192ac4674ca987
+      internalID: -2000297207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 320
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c74a08bb4138942a34aec7398dd463
+      internalID: -958198609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 320
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc260b600c06ac41bab9a2e30d65aa5
+      internalID: 1322109414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 320
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fcd739ecf53fd41afe34822071a114
+      internalID: -1269422509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 320
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0051799cff59a3942894c4be3d474cbb
+      internalID: -2145220754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_8
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 320
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255f1c4480f3f2847a0221f1807eed08
+      internalID: 1677897969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 320
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbf54871acf3bb4397a65aaac161d62
+      internalID: -1064213807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 256
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9895442852f99c45808e594adcf39f3
+      internalID: -1597715593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 256
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd64a6f1c56344341bb602ea2ad62d4c
+      internalID: 923007100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 257
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3550699de1c0bd14fb59febc02dcf45c
+      internalID: -1671072638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_13
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 256
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0babe33d1bceb1b42a09d2c6c572b6d7
+      internalID: 470755711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_14
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 256
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe1d1279c1b3f94c99dcfdb9d6ad799
+      internalID: 685809566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_15
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 256
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790ea0a2967e1234c88abb752b67a35e
+      internalID: -751153044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_16
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 257
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d723ec8be1fdc428c6ace81ce144f3
+      internalID: -750396594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_17
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 256
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87b156aaa8405743b2ff79f19474ef0
+      internalID: 108654139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 194
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0304db607f81e49be32cb2d4dd5e39
+      internalID: 2117388089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_19
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 197
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e09e81418bb4d344b93c17e4187678f
+      internalID: 1968659772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 205
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0a9fb9a6811854588c9c80c66af60d
+      internalID: 150566866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_21
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 192
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dffc4387ac7c2b4ca62f11f1ce3faa4
+      internalID: -953888289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_22
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 192
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad75428b265f814fa1cd3029bb89a6e
+      internalID: -990590311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_23
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 231
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7a441778d6b4648ae112f883dace50
+      internalID: 527757344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 192
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a591d01be652a144bf3146302a8ad2c
+      internalID: -1382425078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_25
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 192
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d50dd2748a4f5489a5ed8ed6b49f53
+      internalID: 1568658556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_26
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 192
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665cf1718e3994840befae9b8ba8436e
+      internalID: -1362417378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_27
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 192
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ad8b935c651224294773b65e25ebb8
+      internalID: 971396312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_28
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 192
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e791817f07138204dac7218e3c222659
+      internalID: -1099565484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_29
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 192
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1ebd017c9b45f418fc5014a67586a1
+      internalID: -1550703414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_30
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 128
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011f633aefa39c643a73cefb201e1719
+      internalID: 787600883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_31
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 128
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f95e5a94ded22e48bd342c5b58a4366
+      internalID: 1268562173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_32
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 130
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277e6878c5aef374d94786ccd01afff0
+      internalID: 408498346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_33
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 135
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d6ee061f2a9204abf91b621992a6f9
+      internalID: 1214762961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_34
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 151
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b15d3af17c99e4f945f8d746fb80d0
+      internalID: -92284424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 139
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e39a12423c325418f1ffa568b083af
+      internalID: 1618423933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_36
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 139
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8516d95c1490494a9332238803fd532
+      internalID: -603140902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_37
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 128
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd955cafbd006b46a5b9a249d6d4b72
+      internalID: -38789236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_38
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 128
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a3776a367f9fa4e805ee5531a783cf
+      internalID: -1179810190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_39
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 128
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d3edf3c2a767d47a2f58f9eeeed127
+      internalID: -567559630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_40
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 128
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46717cf092aa11745b47539033cfb4ea
+      internalID: 63923727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_41
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 128
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14102b209b8438744a07000973c3b12e
+      internalID: -1822943369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_42
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 128
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309f64eb63e1f38409b6e27468e59d8a
+      internalID: -2032670225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_43
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 140
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18761f72d84485498e653ab755e9425
+      internalID: -13195102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_44
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 65
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638c24dbd2efd434286b25f6a82e970b
+      internalID: -544408069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_45
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 67
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ba1bf9c0f6f834db3c49e969ed4007
+      internalID: 2122948705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_46
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 71
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c9acf4c8eaaa44c8bc3fb51146e9b6
+      internalID: 1311334789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_47
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 71
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91214fc992a46884fa61de45874a9cea
+      internalID: -880971313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_48
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 70
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536aeba5149bfb341a8f3108ddef7f64
+      internalID: 347423360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_49
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e262d8fc503fd44b76870e9d099204
+      internalID: -276193037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_50
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2c8d9c4bb108c4faac8b022bcb5aa2
+      internalID: 1325177558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_51
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739f62b2325fa004898264fa804a2fb5
+      internalID: -2077771112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_52
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2f75169d9fbfc4fb0dc09b48cee1cd
+      internalID: 1272400672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_53
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae88544a06b4a0046b8f1ac013a8bb29
+      internalID: -546453491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_54
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb73fe59f94e95547b7306fe22a3bd06
+      internalID: 1504767945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_55
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 38
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a537e450ad6158e4ebdb8fe6e7ecf3c0
+      internalID: 798389856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nomad3_rev_56
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 0
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a67ed1e82aec949ad6e718db203743
+      internalID: -1490668127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,10 +1322,67 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nomad3_rev_54: 1504767945
+      Nomad3_rev_10: -1597715593
+      Nomad3_rev_25: 1568658556
+      Nomad3_rev_35: 1618423933
+      Nomad3_rev_36: -603140902
+      Nomad3_rev_26: -1362417378
+      Nomad3_rev_38: -1179810190
+      Nomad3_rev_42: -2032670225
+      Nomad3_rev_13: 470755711
+      Nomad3_rev_14: 685809566
+      Nomad3_rev_19: 1968659772
+      Nomad3_rev_45: 2122948705
+      Nomad3_rev_52: 1272400672
+      Nomad3_rev_50: 1325177558
+      Nomad3_rev_9: -1064213807
+      Nomad3_rev_55: 798389856
+      Nomad3_rev_16: -750396594
+      Nomad3_rev_56: -1490668127
+      Nomad3_rev_53: -546453491
+      Nomad3_rev_1: 250324800
+      Nomad3_rev_24: -1382425078
+      Nomad3_rev_43: -13195102
+      Nomad3_rev_39: -567559630
+      Nomad3_rev_44: -544408069
+      Nomad3_rev_6: -1269422509
+      Nomad3_rev_7: -2145220754
+      Nomad3_rev_2: 1915850195
+      Nomad3_rev_21: -953888289
+      Nomad3_rev_4: -958198609
+      Nomad3_rev_3: -2000297207
+      Nomad3_rev_5: 1322109414
+      Nomad3_rev_32: 408498346
+      Nomad3_rev_0: -1576997055
+      Nomad3_rev_31: 1268562173
+      Nomad3_rev_28: -1099565484
+      Nomad3_rev_37: -38789236
+      Nomad3_rev_15: -751153044
+      Nomad3_rev_8: 1677897969
+      Nomad3_rev_23: 527757344
+      Nomad3_rev_47: -880971313
+      Nomad3_rev_20: 150566866
+      Nomad3_rev_48: 347423360
+      Nomad3_rev_46: 1311334789
+      Nomad3_rev_51: -2077771112
+      Nomad3_rev_17: 108654139
+      Nomad3_rev_33: 1214762961
+      Nomad3_rev_30: 787600883
+      Nomad3_rev_12: -1671072638
+      Nomad3_rev_49: -276193037
+      Nomad3_rev_18: 2117388089
+      Nomad3_rev_22: -990590311
+      Nomad3_rev_27: 971396312
+      Nomad3_rev_11: 923007100
+      Nomad3_rev_29: -1550703414
+      Nomad3_rev_40: 63923727
+      Nomad3_rev_41: -1822943369
+      Nomad3_rev_34: -92284424
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

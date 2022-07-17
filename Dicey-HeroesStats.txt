@@ -3,30 +3,41 @@ Character stats:
 Barbarian:
 HP-16
 Attack-1d12
-Defence-1d8
-Special: None
+Defence-1d6
+Survivability-d8
+Special: Increase attack by 1 for each kill
+
 Knight:
 HP-12
 Attack-2d4
 Defence-1d10
-Special: None
+Survivability-d6
+Special: Increase defense by 1 for each kill
+
 Rogue:
-HP-8
+HP-6
 Attack-2d4
 Defence-2d4
+Survivability-d8
 Special: On a max roll of a die roll again and add
+
 Wizard:
 HP-6
 Attack-1d4
 Defence-1d4
-Special: Attacks from anywhere, bypasses armor targets front
+Survivability-d4
+Special: 1d4 attacks from anywhere but front, bypasses armor targets front
+
 Archer:
 HP-8
 Attack-1d6
 Defence-1d8
+Survivability-d4
 Special: Uses a d8 attack from anywhere but front, targets back
+
 Healer:
-HP-10
+HP-8
 Attack-1d6
 Defence-1d8
-Special: Heals unit in front of it by 1d6
+Survivability-d6
+Special: Heals unit in front of it by 1d4
