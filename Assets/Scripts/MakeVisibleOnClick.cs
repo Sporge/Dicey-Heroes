@@ -15,10 +15,18 @@ public class MakeVisibleOnClick : MonoBehaviour
     {
         
     }
-
+    
     // Update is called once per frame
     void OnMouseDown()
     {
-        turnThisOn.SetActive(!turnThisOn.activeInHierarchy);
+        
+    }
+
+    void OnMouseOver()
+    {
+        if(Input.GetMouseButtonDown(1)){
+            //do stuff here
+            turnThisOn.SetActive(!turnThisOn.activeInHierarchy);
+        }
     }
 }

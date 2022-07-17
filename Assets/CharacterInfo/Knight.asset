@@ -16,13 +16,25 @@ MonoBehaviour:
   description: Armored defender of the realm
   artwork: {fileID: 998391869, guid: 22a2f66712fda86438a8c834535061d8, type: 3}
   health: 12
+  maxHealth: 0
   attackDice:
-  - dieType: 4
-    dieNum: 2
+  - dieNum: 2
+    dieType: 4
+  baseAttackDice:
+  - dieNum: 2
+    dieType: 4
   defenseDice:
-  - dieType: 10
-    dieNum: 1
-  survivabilityDice:
-  - dieType: 6
-    dieNum: 1
-  magicDice: []
+  - dieNum: 1
+    dieType: 10
+  baseDefenseDice:
+  - dieNum: 1
+    dieType: 10
+  survivalDice:
+  - dieNum: 1
+    dieType: 6
+  baseSurvivalDice:
+  - dieNum: 1
+    dieType: 6
+  specialDice: []
+  baseSpecialDice: []
+  ability: 5

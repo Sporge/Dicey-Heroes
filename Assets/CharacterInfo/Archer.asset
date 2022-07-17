@@ -16,13 +16,29 @@ MonoBehaviour:
   description: Shoots at the back line of the enemies
   artwork: {fileID: -549454205, guid: 298b63ff03caafa4f83c3863860ea38e, type: 3}
   health: 8
+  maxHealth: 0
   attackDice:
-  - dieType: 6
-    dieNum: 1
+  - dieNum: 1
+    dieType: 6
+  baseAttackDice:
+  - dieNum: 1
+    dieType: 6
   defenseDice:
-  - dieType: 8
-    dieNum: 1
-  survivabilityDice:
-  - dieType: 6
-    dieNum: 1
-  magicDice: []
+  - dieNum: 1
+    dieType: 8
+  baseDefenseDice:
+  - dieNum: 1
+    dieType: 8
+  survivalDice:
+  - dieNum: 1
+    dieType: 8
+  baseSurvivalDice:
+  - dieNum: 1
+    dieType: 8
+  specialDice:
+  - dieNum: 1
+    dieType: 8
+  baseSpecialDice:
+  - dieNum: 1
+    dieType: 8
+  ability: 4

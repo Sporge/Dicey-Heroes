@@ -16,13 +16,25 @@ MonoBehaviour:
   description: Average in appearance but able to pull off great stunts
   artwork: {fileID: 1530285743, guid: 3c5b4e09509e68845ae2eae2cbb608be, type: 3}
   health: 6
+  maxHealth: 2
   attackDice:
-  - dieType: 4
-    dieNum: 2
+  - dieNum: 2
+    dieType: 4
+  baseAttackDice:
+  - dieNum: 2
+    dieType: 4
   defenseDice:
-  - dieType: 4
-    dieNum: 2
-  survivabilityDice:
-  - dieType: 8
-    dieNum: 1
-  magicDice: []
+  - dieNum: 2
+    dieType: 4
+  baseDefenseDice:
+  - dieNum: 2
+    dieType: 4
+  survivalDice:
+  - dieNum: 1
+    dieType: 8
+  baseSurvivalDice:
+  - dieNum: 1
+    dieType: 8
+  specialDice: []
+  baseSpecialDice: []
+  ability: 1

@@ -16,14 +16,26 @@ MonoBehaviour:
   description: Reckless but powerful attacker. Also here is more just to see how
     this looks.
   artwork: {fileID: 858603726, guid: 8d310d7d0cc2f5a4aa3a5bee34410a0b, type: 3}
-  health: 16
+  health: 12
+  maxHealth: 0
   attackDice:
-  - dieType: 12
-    dieNum: 1
+  - dieNum: 1
+    dieType: 12
+  baseAttackDice:
+  - dieNum: 1
+    dieType: 12
   defenseDice:
-  - dieType: 8
-    dieNum: 1
-  survivabilityDice:
-  - dieType: 8
-    dieNum: 1
-  magicDice: []
+  - dieNum: 1
+    dieType: 8
+  baseDefenseDice:
+  - dieNum: 1
+    dieType: 8
+  survivalDice:
+  - dieNum: 1
+    dieType: 8
+  baseSurvivalDice:
+  - dieNum: 1
+    dieType: 8
+  specialDice: []
+  baseSpecialDice: []
+  ability: 6

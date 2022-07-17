@@ -56,10 +56,10 @@ public class CharacterDisplay : MonoBehaviour
                 else if (t.name == "SurvivalText")
                 {
                     t.text = "";
-                    for (int i = 0; i < character.survivabilityDice.Length; ++i)
+                    for (int i = 0; i < character.survivalDice.Length; ++i)
                     {
-                        t.text += character.survivabilityDice[i].dieNum + "d" + character.survivabilityDice[i].dieType;
-                        if (i + 1 != character.survivabilityDice.Length)
+                        t.text += character.survivalDice[i].dieNum + "d" + character.survivalDice[i].dieType;
+                        if (i + 1 != character.survivalDice.Length)
                             t.text += ", ";
                     }
                 }
@@ -67,14 +67,18 @@ public class CharacterDisplay : MonoBehaviour
                 {
                     t.text = "";
                     int i = 0;
-                    for (i = 0; i < character.magicDice.Length; ++i)
+                    for (i = 0; i < character.specialDice.Length; ++i)
                     {
-                        t.text += character.magicDice[i].dieNum + "d" + character.magicDice[i].dieType;
-                        if (i + 1 != character.magicDice.Length)
+                        t.text += character.specialDice[i].dieNum + "d" + character.specialDice[i].dieType;
+                        if (i + 1 != character.specialDice.Length)
                             t.text += ", ";
                     }
                     if (i == 0)
                         t.text = "-";
+                }
+                else if (t.name == "Special")
+                {
+                    t.text = "Special: " + System.Enum.GetName(typeof(Abilities),character.ability);
                 }
                 else if (t.name == "Description")
                 {
