@@ -840,7 +840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f54d9c51f955c44a4d20205016dcaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: BetweenRounds
+  nextLevel: FightScene
 --- !u!1 &1130070661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1033,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1333065800}
-  - component: {fileID: 1333065799}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1041,18 +1040,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1333065799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333065798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f506763a03c5c134a947094f0d62db26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1333065800
 Transform:
   m_ObjectHideFlags: 0

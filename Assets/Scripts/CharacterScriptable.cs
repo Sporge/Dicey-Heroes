@@ -52,7 +52,30 @@ public class CharacterScriptable : ScriptableObject
     public dice[] baseSpecialDice = new dice[] { };
     public Abilities ability = Abilities.None;
 
+    public CharacterScriptable()
+    {
+        charName = "Empty";
+        description = "Nothing here";
+        artwork = null;
+        health = 0;
+        ability = Abilities.None;
+        //array nonsense arrrrg
+        System.Array.Resize(ref attackDice, 0);
 
+        System.Array.Resize(ref defenseDice, 0);
+
+        System.Array.Resize(ref survivalDice, 0);
+
+        System.Array.Resize(ref specialDice, 0);
+
+        System.Array.Resize(ref baseAttackDice, 0);
+
+        System.Array.Resize(ref baseDefenseDice, 0);
+
+        System.Array.Resize(ref baseSurvivalDice, 0);
+
+        System.Array.Resize(ref baseSpecialDice,0);
+    }
     public CharacterScriptable(string _charName, string _description, Sprite _artwork, int _health, dice[] _attackDice, dice[] _defenseDice, dice[] _survivalDice, dice[] _specialDice, Abilities _ability)
     {
         charName = _charName;

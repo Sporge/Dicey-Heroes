@@ -19,13 +19,15 @@ public class GameManager : MonoBehaviour
     public CharacterScriptable[] testopponentCharacters;
 
     [HideInInspector]
-    public List<CharacterScriptable> playerCharacters = new List<CharacterScriptable>();
+    public List<CharacterScriptable> playerCharacters = new List<CharacterScriptable>(4);
 
     [HideInInspector]
-    public List<CharacterScriptable> opponentCharacters = new List<CharacterScriptable>();
+    public List<CharacterScriptable> opponentCharacters = new List<CharacterScriptable>(4);
 
     private static int _PlayerGold = 20;
     public static UnityEvent GoldUpdate = new UnityEvent();
+
+    public CharacterScriptable emptyOne;
 
     public static int PlayerGold
     {
@@ -60,13 +62,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        for (int i = 0; i < 4; ++i)
+        {
+            playerCharacters.Add( Instantiate(emptyOne));
+            opponentCharacters.Add( Instantiate(emptyOne));
+        }
         if (testplayerCharacters.Length > 0 && testopponentCharacters.Length > 0)
         {
-            for (int i = 0; i < 4; ++i)
-            {
-                playerCharacters[i] = ((CharacterScriptable)ScriptableObject.CreateInstance("CharacterScriptable"));
-                opponentCharacters[i] = ((CharacterScriptable)ScriptableObject.CreateInstance("CharacterScriptable"));
-            }
+            
             //debug filling the objects
             for (int i = 0; i < testplayerCharacters.Length; ++i)
             {

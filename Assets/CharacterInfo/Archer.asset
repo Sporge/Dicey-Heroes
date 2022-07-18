@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Archer
   m_EditorClassIdentifier: 
   charName: Archer
-  description: Shoots at the back line of the enemies
+  description: Shoots at the end of line when not in front.
   artwork: {fileID: -549454205, guid: 298b63ff03caafa4f83c3863860ea38e, type: 3}
   health: 8
   maxHealth: 0
@@ -22,23 +22,23 @@ MonoBehaviour:
     dieType: 6
   baseAttackDice:
   - dieNum: 1
-    dieType: 6
+    dieType: 4
   defenseDice:
   - dieNum: 1
     dieType: 8
   baseDefenseDice:
   - dieNum: 1
-    dieType: 8
+    dieType: 4
   survivalDice:
   - dieNum: 1
     dieType: 8
   baseSurvivalDice:
   - dieNum: 1
-    dieType: 8
+    dieType: 4
   specialDice:
   - dieNum: 1
     dieType: 8
   baseSpecialDice:
   - dieNum: 1
-    dieType: 8
+    dieType: 4
   ability: 4

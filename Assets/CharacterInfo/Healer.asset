@@ -13,30 +13,32 @@ MonoBehaviour:
   m_Name: Healer
   m_EditorClassIdentifier: 
   charName: Healer
-  description: Average in appearance but able to pull off great stunts
+  description: Heals the character in front when not in melee
   artwork: {fileID: -1576997055, guid: cf31950101b7f994c9a72618e8977c46, type: 3}
-  health: 8
-  maxHealth: 2
+  health: 12
+  maxHealth: 0
   attackDice:
   - dieNum: 1
     dieType: 6
   baseAttackDice:
-  - dieNum: 2
+  - dieNum: 1
     dieType: 4
   defenseDice:
   - dieNum: 1
     dieType: 6
   baseDefenseDice:
-  - dieNum: 2
+  - dieNum: 1
     dieType: 4
   survivalDice:
   - dieNum: 1
-    dieType: 8
+    dieType: 6
   baseSurvivalDice:
   - dieNum: 1
-    dieType: 8
+    dieType: 4
   specialDice:
   - dieNum: 1
     dieType: 4
-  baseSpecialDice: []
+  baseSpecialDice:
+  - dieNum: 1
+    dieType: 4
   ability: 2
