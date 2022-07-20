@@ -13,16 +13,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
     [SerializeField]
-    public CharacterScriptable[] testplayerCharacters;
-
+    public CharacterTeam PlayerTeam;
     [SerializeField]
-    public CharacterScriptable[] testopponentCharacters;
-
-    [HideInInspector]
-    public List<CharacterScriptable> playerCharacters = new List<CharacterScriptable>(4);
-
-    [HideInInspector]
-    public List<CharacterScriptable> opponentCharacters = new List<CharacterScriptable>(4);
+    public CharacterTeam OpponentTeam;
 
     private static int _PlayerGold = 20;
     public static UnityEvent GoldUpdate = new UnityEvent();
@@ -57,12 +50,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    void startTeams(CharacterScriptable[] Team)
+    {
+        //setup base teams if just starting
+        for (int i = 0; i < Team.Length; i++)
+        {
+            Team[i].CopyValues(emptyOne);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 4; ++i)
+        startTeams(PlayerTeam.Team);
+        startTeams(OpponentTeam.Team);
+
+        
+
+
+        /*for (int i = 0; i < 4; ++i)
         {
             playerCharacters.Add( Instantiate(emptyOne));
             opponentCharacters.Add( Instantiate(emptyOne));
@@ -84,8 +90,8 @@ public class GameManager : MonoBehaviour
                 
                 opponentCharacters[i].CopyValues(testopponentCharacters[i]);
             }
-        }
-        
+        }*/
+
     }
 
     private void Update()

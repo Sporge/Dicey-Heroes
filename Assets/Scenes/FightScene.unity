@@ -320,26 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f506763a03c5c134a947094f0d62db26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testplayerCharacters:
-  - {fileID: 11400000, guid: 2276ab78e8f2e8f4bb462e5b0a6a6b2e, type: 2}
-  - {fileID: 11400000, guid: 145d67e89c8dffa4d8c785d39614796b, type: 2}
-  - {fileID: 11400000, guid: e98e61bf7c9a9a44ba3d69382c606cf2, type: 2}
-  - {fileID: 11400000, guid: 5f83c18288b9fc74ca930c7f311967ce, type: 2}
-  testopponentCharacters:
-  - {fileID: 11400000, guid: fb4cff645f6bad54db91238783c19712, type: 2}
-  - {fileID: 11400000, guid: 145d67e89c8dffa4d8c785d39614796b, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 5f83c18288b9fc74ca930c7f311967ce, type: 2}
-  playerCharacters:
-  - {fileID: 11400000, guid: 2276ab78e8f2e8f4bb462e5b0a6a6b2e, type: 2}
-  - {fileID: 11400000, guid: e98e61bf7c9a9a44ba3d69382c606cf2, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 5f83c18288b9fc74ca930c7f311967ce, type: 2}
-  opponentCharacters:
-  - {fileID: 11400000, guid: fb4cff645f6bad54db91238783c19712, type: 2}
-  - {fileID: 11400000, guid: 145d67e89c8dffa4d8c785d39614796b, type: 2}
-  - {fileID: 11400000, guid: 5f83c18288b9fc74ca930c7f311967ce, type: 2}
-  - {fileID: 11400000, guid: 5f83c18288b9fc74ca930c7f311967ce, type: 2}
+  PlayerTeam: {fileID: 11400000, guid: 36f1b309b64f59a41825987b83157293, type: 2}
+  OpponentTeam: {fileID: 11400000, guid: 722081c8717075c43aecd5c695ec6b50, type: 2}
   emptyOne: {fileID: 11400000, guid: ebfcf2ca1e34e894eb5ca6529036684d, type: 2}
 --- !u!4 &896767038
 Transform:

@@ -12,6 +12,11 @@ public struct dice
 {
     public int dieNum;
     public int dieType;
+    public dice(int _dieNum, int _dieType)
+    {
+        dieNum = _dieNum;
+        dieType = _dieType;
+    }
 }
 
 public enum Abilities
@@ -85,37 +90,14 @@ public class CharacterScriptable : ScriptableObject
         maxHealth = _health;
         ability = _ability;
         //array nonsense arrrrg
-        System.Array.Resize(ref attackDice, _attackDice.Length);
-        //_attackDice.CopyTo(attackDice, _attackDice.Length);
-        System.Array.Copy(_attackDice, attackDice, attackDice.Length);
-
-        System.Array.Resize(ref defenseDice, _defenseDice.Length);
-        //_defenseDice.CopyTo(defenseDice, _defenseDice.Length);
-        System.Array.Copy(_defenseDice, defenseDice, defenseDice.Length);
-
-        System.Array.Resize(ref survivalDice, _survivalDice.Length);
-        //_survivalDice.CopyTo(survivalDice, _survivalDice.Length);
-        System.Array.Copy(_survivalDice, survivalDice, survivalDice.Length);
-
-        System.Array.Resize(ref specialDice, _specialDice.Length);
-        //_specialDice.CopyTo(specialDice, _specialDice.Length);
-        System.Array.Copy(_specialDice, specialDice, specialDice.Length);
-
-        System.Array.Resize(ref baseAttackDice, _attackDice.Length);
-        //_attackDice.CopyTo(baseAttackDice, _attackDice.Length);
-        System.Array.Copy(_attackDice, baseAttackDice, baseAttackDice.Length);
-
-        System.Array.Resize(ref baseDefenseDice, _defenseDice.Length);
-        //_defenseDice.CopyTo(baseDefenseDice, _defenseDice.Length);
-        System.Array.Copy(_defenseDice, baseDefenseDice, baseDefenseDice.Length);
-
-        System.Array.Resize(ref baseSurvivalDice, _survivalDice.Length);
-        //_survivalDice.CopyTo(baseSurvivalDice, _survivalDice.Length);
-        System.Array.Copy(_survivalDice, baseSurvivalDice, baseSurvivalDice.Length);
-
-        System.Array.Resize(ref baseSpecialDice, _specialDice.Length);
-        //_specialDice.CopyTo(baseSpecialDice, _specialDice.Length);
-        System.Array.Copy(_specialDice, baseSpecialDice, baseSpecialDice.Length);
+        CopyDiceArray(attackDice, _attackDice);
+        CopyDiceArray(baseAttackDice, _attackDice);
+        CopyDiceArray(defenseDice, _defenseDice);
+        CopyDiceArray(baseDefenseDice, _defenseDice);
+        CopyDiceArray(survivalDice, _survivalDice);
+        CopyDiceArray(baseSurvivalDice, _survivalDice);
+        CopyDiceArray(specialDice, _specialDice);
+        CopyDiceArray(baseSpecialDice, _specialDice);
     }
     public void CopyValues(CharacterScriptable toCopy)
     {
@@ -126,38 +108,30 @@ public class CharacterScriptable : ScriptableObject
         maxHealth = toCopy.health;
         ability = toCopy.ability;
         //array nonsense arrrrg
-        System.Array.Resize(ref attackDice, toCopy.attackDice.Length);
-        //toCopy.attackDice.CopyTo(attackDice, toCopy.attackDice.Length);
-        System.Array.Copy(toCopy.attackDice, attackDice, attackDice.Length);
-
-        System.Array.Resize(ref defenseDice, toCopy.defenseDice.Length);
-        //toCopy.defenseDice.CopyTo(defenseDice, toCopy.defenseDice.Length);
-        System.Array.Copy(toCopy.defenseDice, defenseDice, defenseDice.Length);
-
-        System.Array.Resize(ref survivalDice, toCopy.survivalDice.Length);
-        //toCopy.survivalDice.CopyTo(survivalDice, toCopy.survivalDice.Length);
-        System.Array.Copy(toCopy.survivalDice, survivalDice, survivalDice.Length);
-
-        System.Array.Resize(ref specialDice, toCopy.specialDice.Length);
-        //toCopy.specialDice.CopyTo(specialDice, toCopy.specialDice.Length);
-        System.Array.Copy(toCopy.specialDice, specialDice, specialDice.Length);
 
 
-        System.Array.Resize(ref baseAttackDice, toCopy.attackDice.Length);
-        //toCopy.attackDice.CopyTo(baseAttackDice, toCopy.attackDice.Length);
-        System.Array.Copy(toCopy.attackDice, baseAttackDice, baseAttackDice.Length);
+        CopyDiceArray(attackDice, toCopy.attackDice);
+        CopyDiceArray(baseAttackDice, toCopy.baseAttackDice);
+        CopyDiceArray(defenseDice, toCopy.defenseDice);
+        CopyDiceArray(baseDefenseDice, toCopy.baseDefenseDice);
+        CopyDiceArray(survivalDice, toCopy.survivalDice);
+        CopyDiceArray(baseSurvivalDice, toCopy.baseSurvivalDice);
+        CopyDiceArray(specialDice, toCopy.specialDice);
+        CopyDiceArray(baseSpecialDice, toCopy.baseSpecialDice);
 
-        System.Array.Resize(ref baseDefenseDice, toCopy.defenseDice.Length);
-        //toCopy.defenseDice.CopyTo(baseDefenseDice, toCopy.defenseDice.Length);
-        System.Array.Copy(toCopy.defenseDice, baseDefenseDice, baseDefenseDice.Length);
+        
+    }
 
-        System.Array.Resize(ref baseSurvivalDice, toCopy.survivalDice.Length);
-        //toCopy.survivalDice.CopyTo(baseSurvivalDice, toCopy.survivalDice.Length);
-        System.Array.Copy(toCopy.survivalDice, baseSurvivalDice, baseSurvivalDice.Length);
-
-        System.Array.Resize(ref baseSpecialDice, toCopy.specialDice.Length);
-        //toCopy.specialDice.CopyTo(baseSpecialDice, toCopy.specialDice.Length);
-        System.Array.Copy(toCopy.specialDice, baseSpecialDice, baseSpecialDice.Length);
+    public void CopyDiceArray(dice[] destination, dice[] source)
+    {
+        System.Array.Resize(ref destination, source.Length);
+        
+        for(int i = 0; i < source.Length; i++)
+        {
+            //destination[i] = new dice();
+            destination[i].dieNum = source[i].dieNum;
+            destination[i].dieType = source[i].dieType;
+        }
     }
     
 }

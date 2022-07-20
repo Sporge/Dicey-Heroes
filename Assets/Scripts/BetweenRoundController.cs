@@ -16,6 +16,7 @@ public class BetweenRoundController : MonoBehaviour
 
     public GameObject characterPrefab;
 
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -66,5 +67,6 @@ public class BetweenRoundController : MonoBehaviour
     {
 
     }
+    */
 
 }

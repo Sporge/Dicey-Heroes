@@ -42,7 +42,7 @@ public class FightController : MonoBehaviour
     //next level info
     public string winLevel = "Won Screen";
     public string loseLevel = "Lost Screen";
-
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -449,5 +449,5 @@ public class FightController : MonoBehaviour
     {
         SceneManager.LoadScene(loseLevel);
     }
-
+    */
 }
