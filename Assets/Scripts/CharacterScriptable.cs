@@ -17,6 +17,11 @@ public struct dice
         dieNum = _dieNum;
         dieType = _dieType;
     }
+    public dice(dice _d)
+    {
+        dieNum = _d.dieNum;
+        dieType = _d.dieType;
+    }
 }
 
 public enum Abilities
@@ -40,21 +45,21 @@ public class CharacterScriptable : ScriptableObject
     [HideInInspector]
     public int maxHealth;
     [SerializeField]
-    public dice[] attackDice = new dice[] { };
+    public List<dice> attackDice = new List<dice>();
     [HideInInspector]
-    public dice[] baseAttackDice = new dice[] { };
+    public List<dice> baseAttackDice = new List<dice>();
     [SerializeField]
-    public dice[] defenseDice = new dice[] { };
+    public List<dice> defenseDice = new List<dice>();
     [HideInInspector]
-    public dice[] baseDefenseDice = new dice[] { };
+    public List<dice> baseDefenseDice = new List<dice>();
     [SerializeField]
-    public dice[] survivalDice = new dice[] { };
+    public List<dice> survivalDice = new List<dice>();
     [HideInInspector]
-    public dice[] baseSurvivalDice = new dice[] { };
+    public List<dice> baseSurvivalDice = new List<dice>();
     [SerializeField]
-    public dice[] specialDice = new dice[] { };
+    public List<dice> specialDice = new List<dice>();
     [HideInInspector]
-    public dice[] baseSpecialDice = new dice[] { };
+    public List<dice> baseSpecialDice = new List<dice>();
     public Abilities ability = Abilities.None;
 
     public CharacterScriptable()
@@ -64,8 +69,17 @@ public class CharacterScriptable : ScriptableObject
         artwork = null;
         health = 0;
         ability = Abilities.None;
+
+        attackDice = new List<dice>();
+        baseAttackDice = new List<dice>();
+        defenseDice = new List<dice>();
+        baseDefenseDice = new List<dice>();
+        specialDice = new List<dice>();
+        baseSpecialDice = new List<dice>();
+        survivalDice = new List<dice>();
+        baseSurvivalDice = new List<dice>();
         //array nonsense arrrrg
-        System.Array.Resize(ref attackDice, 0);
+       /* System.Array.Resize(ref attackDice, 0);
 
         System.Array.Resize(ref defenseDice, 0);
 
@@ -79,9 +93,9 @@ public class CharacterScriptable : ScriptableObject
 
         System.Array.Resize(ref baseSurvivalDice, 0);
 
-        System.Array.Resize(ref baseSpecialDice,0);
+        System.Array.Resize(ref baseSpecialDice,0);*/
     }
-    public CharacterScriptable(string _charName, string _description, Sprite _artwork, int _health, dice[] _attackDice, dice[] _defenseDice, dice[] _survivalDice, dice[] _specialDice, Abilities _ability)
+    public CharacterScriptable(string _charName, string _description, Sprite _artwork, int _health, List<dice> _attackDice, List<dice> _defenseDice, List<dice> _survivalDice, List<dice> _specialDice, Abilities _ability)
     {
         charName = _charName;
         description = _description;
@@ -90,14 +104,14 @@ public class CharacterScriptable : ScriptableObject
         maxHealth = _health;
         ability = _ability;
         //array nonsense arrrrg
-        CopyDiceArray(attackDice, _attackDice);
-        CopyDiceArray(baseAttackDice, _attackDice);
-        CopyDiceArray(defenseDice, _defenseDice);
-        CopyDiceArray(baseDefenseDice, _defenseDice);
-        CopyDiceArray(survivalDice, _survivalDice);
-        CopyDiceArray(baseSurvivalDice, _survivalDice);
-        CopyDiceArray(specialDice, _specialDice);
-        CopyDiceArray(baseSpecialDice, _specialDice);
+        CopyDiceList(attackDice, _attackDice);
+        CopyDiceList(baseAttackDice, _attackDice);
+        CopyDiceList(defenseDice, _defenseDice);
+        CopyDiceList(baseDefenseDice, _defenseDice);
+        CopyDiceList(survivalDice, _survivalDice);
+        CopyDiceList(baseSurvivalDice, _survivalDice);
+        CopyDiceList(specialDice, _specialDice);
+        CopyDiceList(baseSpecialDice, _specialDice);
     }
     public void CopyValues(CharacterScriptable toCopy)
     {
@@ -107,30 +121,42 @@ public class CharacterScriptable : ScriptableObject
         health = toCopy.health;
         maxHealth = toCopy.health;
         ability = toCopy.ability;
-        //array nonsense arrrrg
-
-
-        CopyDiceArray(attackDice, toCopy.attackDice);
-        CopyDiceArray(baseAttackDice, toCopy.baseAttackDice);
-        CopyDiceArray(defenseDice, toCopy.defenseDice);
-        CopyDiceArray(baseDefenseDice, toCopy.baseDefenseDice);
-        CopyDiceArray(survivalDice, toCopy.survivalDice);
-        CopyDiceArray(baseSurvivalDice, toCopy.baseSurvivalDice);
-        CopyDiceArray(specialDice, toCopy.specialDice);
-        CopyDiceArray(baseSpecialDice, toCopy.baseSpecialDice);
 
         
+        
+        CopyDiceList(attackDice, toCopy.attackDice);
+        CopyDiceList(baseAttackDice, toCopy.baseAttackDice);
+        CopyDiceList(defenseDice, toCopy.defenseDice);
+        CopyDiceList(baseDefenseDice, toCopy.baseDefenseDice);
+        CopyDiceList(survivalDice, toCopy.survivalDice);
+        CopyDiceList(baseSurvivalDice, toCopy.baseSurvivalDice);
+        CopyDiceList(specialDice, toCopy.specialDice);
+        CopyDiceList(baseSpecialDice, toCopy.baseSpecialDice);
+        
+
     }
 
-    public void CopyDiceArray(dice[] destination, dice[] source)
+    public void CopyDiceList(List <dice> destination, List<dice> source)
     {
-        System.Array.Resize(ref destination, source.Length);
-        
-        for(int i = 0; i < source.Length; i++)
+        //System.Array.Resize(ref destination, source.Length);
+
+
+        //System.Array.Copy(source, destination, source.Length);
+
+
+        /*for (int i = 0; i < source.Length; i++)
         {
-            //destination[i] = new dice();
+            destination[i] = new dice();
             destination[i].dieNum = source[i].dieNum;
             destination[i].dieType = source[i].dieType;
+        }*/
+
+        destination.Clear();
+
+        foreach(dice d in source)
+        {
+            dice temp = new dice(d);
+            destination.Add(temp);
         }
     }
     

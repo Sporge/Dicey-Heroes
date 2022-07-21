@@ -320,8 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f506763a03c5c134a947094f0d62db26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerTeam: {fileID: 11400000, guid: 36f1b309b64f59a41825987b83157293, type: 2}
-  OpponentTeam: {fileID: 11400000, guid: 722081c8717075c43aecd5c695ec6b50, type: 2}
+  toCopyPlayer: {fileID: 11400000, guid: 36f1b309b64f59a41825987b83157293, type: 2}
+  toCopyOpponent: {fileID: 11400000, guid: 722081c8717075c43aecd5c695ec6b50, type: 2}
   emptyOne: {fileID: 11400000, guid: ebfcf2ca1e34e894eb5ca6529036684d, type: 2}
 --- !u!4 &896767038
 Transform:
@@ -681,6 +681,17 @@ MonoBehaviour:
   turnTime: 1
   winLevel: Won Screen
   loseLevel: Lost Screen
+  debugging: 1
+  debugPlayerTeam:
+  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
+  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
+  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
+  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
+  debugOpponentTeam:
+  - {fileID: 11400000, guid: fb4cff645f6bad54db91238783c19712, type: 2}
+  - {fileID: 11400000, guid: fb4cff645f6bad54db91238783c19712, type: 2}
+  - {fileID: 11400000, guid: fb4cff645f6bad54db91238783c19712, type: 2}
+  - {fileID: 11400000, guid: fb4cff645f6bad54db91238783c19712, type: 2}
 --- !u!4 &1872567173
 Transform:
   m_ObjectHideFlags: 0

@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979b059650b71eb4d8354117f274fcb4, type: 3}
   m_Name: P1
   m_EditorClassIdentifier: 
-  charName: Empty
-  description: No party member here!
-  artwork: {fileID: 0}
-  health: 0
-  maxHealth: 0
+  charName: Wizard
+  description: Spellcaster able to use magic to break defenses, but terrible in melee
+    fights
+  artwork: {fileID: -383757793, guid: b220168e8ca3cad4fae834ced1790df5, type: 3}
+  health: 6
+  maxHealth: 6
   attackDice: []
   baseAttackDice: []
   defenseDice: []
@@ -25,4 +26,4 @@ MonoBehaviour:
   baseSurvivalDice: []
   specialDice: []
   baseSpecialDice: []
-  ability: 0
+  ability: 3

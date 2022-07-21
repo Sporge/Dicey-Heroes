@@ -13,9 +13,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
     [SerializeField]
-    public CharacterTeam PlayerTeam;
+    private CharacterTeam toCopyPlayer;
     [SerializeField]
-    public CharacterTeam OpponentTeam;
+    private CharacterTeam toCopyOpponent;
+    [SerializeField]
+    static public CharacterTeam PlayerTeam;
+    [SerializeField]
+    static public CharacterTeam OpponentTeam;
 
     private static int _PlayerGold = 20;
     public static UnityEvent GoldUpdate = new UnityEvent();
@@ -62,6 +66,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerTeam = Instantiate(toCopyPlayer);
+        OpponentTeam = Instantiate(toCopyOpponent);
+
         startTeams(PlayerTeam.Team);
         startTeams(OpponentTeam.Team);
 

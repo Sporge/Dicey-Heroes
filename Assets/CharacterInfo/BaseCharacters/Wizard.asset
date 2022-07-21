@@ -20,7 +20,7 @@ MonoBehaviour:
   maxHealth: 0
   attackDice:
   - dieNum: 1
-    dieType: 4
+    dieType: 6
   baseAttackDice:
   - dieNum: 1
     dieType: 4

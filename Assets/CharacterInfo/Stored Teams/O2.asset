@@ -12,17 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979b059650b71eb4d8354117f274fcb4, type: 3}
   m_Name: O1
   m_EditorClassIdentifier: 
-  charName: Empty
-  description: No party member here!
-  artwork: {fileID: 0}
-  health: 0
-  maxHealth: 0
-  attackDice: []
-  baseAttackDice: []
-  defenseDice: []
-  baseDefenseDice: []
-  survivalDice: []
-  baseSurvivalDice: []
+  charName: Barbarian
+  description: Reckless but powerful attacker. Also here is more just to see how
+    this looks.
+  artwork: {fileID: 858603726, guid: 8d310d7d0cc2f5a4aa3a5bee34410a0b, type: 3}
+  health: 10
+  maxHealth: 12
+  attackDice:
+  - dieNum: 1
+    dieType: 12
+  baseAttackDice:
+  - dieNum: 1
+    dieType: 12
+  defenseDice:
+  - dieNum: 1
+    dieType: 8
+  baseDefenseDice:
+  - dieNum: 1
+    dieType: 8
+  survivalDice:
+  - dieNum: 1
+    dieType: 8
+  baseSurvivalDice:
+  - dieNum: 1
+    dieType: 8
   specialDice: []
   baseSpecialDice: []
-  ability: 0
+  ability: 6

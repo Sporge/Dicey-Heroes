@@ -36,30 +36,30 @@ public class CharacterDisplay : MonoBehaviour
                 else if (t.name == "AttackText")
                 {
                     t.text = "";
-                    for (int i = 0; i < character.attackDice.Length; ++i)
+                    for (int i = 0; i < character.attackDice.Count; ++i)
                     {
                         t.text += character.attackDice[i].dieNum + "d" + character.attackDice[i].dieType;
-                        if (i + 1 != character.attackDice.Length)
+                        if (i + 1 != character.attackDice.Count)
                             t.text += ", ";
                     }
                 }
                 else if (t.name == "DefenseText")
                 {
                     t.text = "";
-                    for (int i = 0; i < character.defenseDice.Length; ++i)
+                    for (int i = 0; i < character.defenseDice.Count; ++i)
                     {
                         t.text += character.defenseDice[i].dieNum + "d" + character.defenseDice[i].dieType;
-                        if (i + 1 != character.defenseDice.Length)
+                        if (i + 1 != character.defenseDice.Count)
                             t.text += ", ";
                     }
                 }
                 else if (t.name == "SurvivalText")
                 {
                     t.text = "";
-                    for (int i = 0; i < character.survivalDice.Length; ++i)
+                    for (int i = 0; i < character.survivalDice.Count; ++i)
                     {
                         t.text += character.survivalDice[i].dieNum + "d" + character.survivalDice[i].dieType;
-                        if (i + 1 != character.survivalDice.Length)
+                        if (i + 1 != character.survivalDice.Count)
                             t.text += ", ";
                     }
                 }
@@ -67,10 +67,10 @@ public class CharacterDisplay : MonoBehaviour
                 {
                     t.text = "";
                     int i = 0;
-                    for (i = 0; i < character.specialDice.Length; ++i)
+                    for (i = 0; i < character.specialDice.Count; ++i)
                     {
                         t.text += character.specialDice[i].dieNum + "d" + character.specialDice[i].dieType;
-                        if (i + 1 != character.specialDice.Length)
+                        if (i + 1 != character.specialDice.Count)
                             t.text += ", ";
                     }
                     if (i == 0)
