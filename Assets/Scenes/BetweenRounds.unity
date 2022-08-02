@@ -822,18 +822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f506763a03c5c134a947094f0d62db26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testplayerCharacters:
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  testopponentCharacters:
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  - {fileID: 11400000, guid: 782d856b193b4ba4696a070fad7c3c59, type: 2}
-  playerCharacters: []
-  opponentCharacters: []
+  toCopyPlayer: {fileID: 11400000, guid: 36f1b309b64f59a41825987b83157293, type: 2}
+  toCopyOpponent: {fileID: 11400000, guid: 722081c8717075c43aecd5c695ec6b50, type: 2}
   emptyOne: {fileID: 11400000, guid: ebfcf2ca1e34e894eb5ca6529036684d, type: 2}
 --- !u!4 &1623801219
 Transform:

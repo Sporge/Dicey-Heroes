@@ -219,7 +219,7 @@ public class FightController : MonoBehaviour
                 ++pi;
             }
 
-            while (pi < GameManager.OpponentTeam.Team.Length && GameManager.OpponentTeam.Team[oj].health <= 0)
+            while (oj < GameManager.OpponentTeam.Team.Length && GameManager.OpponentTeam.Team[oj].health <= 0)
             {
                 ++oj;
             }
